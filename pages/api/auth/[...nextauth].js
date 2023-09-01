@@ -13,6 +13,7 @@ export default NextAuth({
       clientSecret: process.env.CLIENT_SECRET
     })
   ],
+  secret: process.env.NEXTAUTH_SECRET, // Use an environment variable for better security
   callbacks: {
     async jwt({ token, user }) {
       if (user) {

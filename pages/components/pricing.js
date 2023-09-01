@@ -26,6 +26,68 @@ function Pricing() {
       <div className={styles.pricing_page}>
         <div className={styles.pricing_page_wrapper}>
           <div className={styles.pricing_headers_list_wrapper}>
+
+
+              <div className={styles.statements}>
+
+                
+              <ul className={styles.disclaimer_div}>
+                <li>
+                <h1 className={styles.disclaimer_title}>Free Resources</h1>
+                </li>
+                <li>
+                <div className={styles.disclaimer_paragraph_wrapper}>
+                <p className={styles.disclaimer_paragraph} >*High quality, royalty-free content as an option</p>
+                <p className={styles.disclaimer_paragraph} >*Free Domains (some features on the ecommerce plans may not apply)</p>
+                <p className={styles.disclaimer_paragraph} >*No extra charge on projects that use royalty-free content</p>
+                </div>
+                </li>
+              </ul>
+
+
+              <ul className={styles.disclaimer_div}>
+                <li>
+                <h1 className={styles.disclaimer_title}>VPS PLANS</h1>
+                </li>
+                <li>
+                <div className={styles.disclaimer_paragraph_wrapper}>
+                <p className={styles.disclaimer_paragraph} >*Choose plans with great deals offering ram space ranging from 1.3gb to 8gb ram space.</p>
+                <p className={styles.disclaimer_paragraph} >*4 Core CPU (load balanced between a maximum of 7 other users/clients on the major server).</p>
+                <p className={styles.disclaimer_paragraph} >*Bandwith is unmetered</p>
+                </div>
+                </li>
+              </ul>
+
+
+              <ul className={styles.disclaimer_div}>
+                <li>
+                <h1 className={styles.disclaimer_title}>Copyright Safety</h1>
+                </li>
+                <li>
+                <div className={styles.disclaimer_paragraph_wrapper}>
+                <p className={styles.disclaimer_paragraph} >*High quality, royalty-free content as an option</p>
+                <p className={styles.disclaimer_paragraph} >*Free Domains (some features on the ecommerce plans may not apply)</p>
+                <p className={styles.disclaimer_paragraph} >*Avoid imitations with the content you request, and still get what you asked for</p>
+                </div>
+                </li>
+              </ul>
+
+              <ul className={styles.disclaimer_div}>
+                <li>
+                <h1 className={styles.disclaimer_title}>Quotes</h1>
+                </li>
+                <li>
+                <div className={styles.disclaimer_paragraph_wrapper}>
+                <p className={styles.disclaimer_paragraph} >*No charge on quotes</p>
+                <p className={styles.disclaimer_paragraph} >*Closest quote to accuracy till end of project</p>
+                <p className={styles.disclaimer_paragraph} >*No surprises, everything is listed on the bill</p>
+              </div>
+              </li>
+              </ul>
+
+              </div>
+
+              <div>
             <ul className={styles.pricing_headers_list}>
               <li className={styles.tab_1}>
                 <p>Static</p>
@@ -47,6 +109,7 @@ function Pricing() {
                 <p>E-Plus</p>
               </li>
             </ul>
+            </div>
           </div>
 
           <div className={styles.span_divider_parent}>
@@ -1027,6 +1090,84 @@ function Pricing() {
               </div>
             </div>
           </div>
+
+          <div>
+
+<ul className={styles.offered_list}>
+
+    <li className={styles.offered_item}>
+        <Link href={"/services"}>
+            <Image
+                className={styles.logo_ssl_logo}
+                width={50}
+                height={50}
+                alt="logo"
+                src="/logored.png"
+                >
+            </Image>
+        </Link>
+        <p className={styles.more_tag}> SSL Security</p>
+    </li>
+
+
+    <li className={styles.offered_item}>
+        <Link href={"/services"}>
+            <Image
+                className={styles.private_domain_logo}
+                width={50}
+                height={50}
+                alt="logo"
+                src="/logored.png"
+                >
+            </Image>
+        </Link>
+        <p className={styles.more_tag}>Private Domains</p>
+    </li>
+
+    <li className={styles.offered_item}>
+        <Link href={"/services"}>
+            <Image
+                className={styles.logo_ssl_logo}
+                width={50}
+                height={50}
+                alt="logo"
+                src="/logored.png"
+                >
+            </Image>
+        </Link>
+        <p className={styles.more_tag}>Original Code</p>
+    </li>
+
+    <li className={styles.offered_item}>
+        <Link href={"/services"}>
+            <Image
+                className={styles.private_domain_logo}
+                width={50}
+                height={50}
+                alt="logo"
+                src="/logored.png"
+                >
+            </Image>
+        </Link>
+        <p className={styles.more_tag}>Payment Gates</p>
+    </li>
+
+</ul>
+
+<ul className={styles.bottom_disclaimer_div}>
+                <li>
+                <h1 className={styles.disclaimer_title}>fULLY FEATURED</h1>
+                </li>
+                <li>
+                <div className={styles.bottom_disclaimer}>
+                <p className={styles.bottom_disclaimer_paragraph} >Build Your Apps without the usual constraints</p>
+                <p className={styles.bottom_disclaimer_paragraph} >Add APIS, payment gates, and more</p>
+                <p className={styles.bottom_disclaimer_paragraph} >Add authentication</p>
+                </div>
+                </li>
+              </ul>
+
+</div>
         </div>
       </div>
 

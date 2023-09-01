@@ -45,20 +45,16 @@ function Header() {
                   <>
 
                     <button className={`${styles.register_button} ${xsmStyles.register_button_xsm}`} onClick={() => signOut('github')()}>
-                      <p>signOut</p>
-                    </button>
-
-                    <button className={`${styles.register_button} ${xsmStyles.register_button_xsm}`} onClick={() => signOut('google')()}>
-                      <p>signOut</p>
+                      <p>Logout</p>
                     </button>
                   </>
                 ) : (
                   <>
                     <button className={`${styles.login_button} ${xsmStyles.login_button_xsm}`} onClick={() => signIn('google')}>
-                      <p>signIn</p>
+                      <p>GitHub signIn</p>
                     </button>
                     <button className={`${styles.login_button} ${xsmStyles.login_button_xsm}`} onClick={() => signIn('github')}>
-                      <p>signIn</p>
+                      <p>Google signIn</p>
                     </button>
                   </>
                 )}

@@ -37,8 +37,9 @@ function Body() {
                     width={50}
                     height={50}
                     alt="avatar"
-                    src="/bgwhole8.jpg">
+                    src="/logored.png">
                   </Image>
+                  <p className={styles.avatar_image_list_item_paragraph} >JAVASCRIPT</p>
                 </li>
                 <li className={styles.avatar_image_list_item}>
                   <Image
@@ -46,8 +47,9 @@ function Body() {
                     width={50}
                     height={50}
                     alt="avatar"
-                    src="/bgwhole8.jpg">
+                    src="/logored.png">
                   </Image>
+                  <p className={styles.avatar_image_list_item_paragraph} >NEXT JS</p>
                 </li>
                 <li className={styles.avatar_image_list_item}>
                   <Image
@@ -55,8 +57,9 @@ function Body() {
                     width={50}
                     height={50}
                     alt="avatar"
-                    src="/bgwhole8.jpg">
+                    src="/logored.png">
                   </Image>
+                  <p className={styles.avatar_image_list_item_paragraph} >HTML & CSS</p>
                 </li>
                 <li className={styles.avatar_image_list_item}>
                   <Image
@@ -73,8 +76,9 @@ function Body() {
                     width={50}
                     height={50}
                     alt="avatar"
-                    src="/bgwhole6.jpg">
+                    src="/logored.png">
                   </Image>
+                  <p className={styles.avatar_image_list_item_paragraph} >PHP</p>
                 </li>
                 <li className={styles.avatar_image_list_item}>
                   <Image
@@ -82,8 +86,9 @@ function Body() {
                     width={50}
                     height={50}
                     alt="avatar"
-                    src="/bgwhole6.jpg">
+                    src="/logored.png">
                   </Image>
+                  <p className={styles.avatar_image_list_item_paragraph} >TYPESCRIPT</p>
                 </li>
                 <li className={styles.avatar_image_list_item}>
                   <Image
@@ -91,8 +96,9 @@ function Body() {
                     width={50}
                     height={50}
                     alt="avatar"
-                    src="/bgwhole6.jpg">
+                    src="/logored.png">
                   </Image>
+                  <p className={styles.avatar_image_list_item_paragraph} >SQL, MONGODB</p>
                 </li>
               </ul>
 
@@ -105,22 +111,13 @@ function Body() {
                 <p>deo_singiza@hotmail.com </p>
                   <p>astrumstellar@gmail.com </p>
                   <p>astrular@astrumstellar.com </p>
+                  <p className={styles.phone_number}>(519)-965-9128</p>
                 </div>
               </li>
 
             </ul>
 
             <ul className={styles.credentials}>
-              <li className={styles.my_logo}>
-                <Image
-                  className={styles.credentials_image}
-                  width={50}
-                  height={50}
-                  alt="logo"
-                  src="/logored.png"
-                >
-                </Image>
-              </li>
               <li className={styles.visualstudio_logo}>
                 <Image
                   className={styles.credentials_image}
@@ -193,6 +190,34 @@ function Body() {
               </li>
             </ul>
 
+            
+              <ul className={styles.essentials_list}> 
+
+                <li className={styles.essentials_list_item} >
+                <div className={styles.essentials_list_item_wrapper} >
+                <h1>Layouts</h1>
+              <p>Choose from thousands of template styles</p>
+
+            </div>
+              </li>
+
+              <li className={styles.essentials_list_item} >
+              <div className={styles.essentials_list_item_wrapper} >
+              <h1>Free Domains</h1>
+              <p>Get a free domain with various options and hosts</p>
+              </div>
+              </li>
+
+
+              <li className={styles.essentials_list_item} >
+              <div className={styles.essentials_list_item_wrapper} >
+              <h1>Paid Domains</h1>
+              <p>Purchased on a yearly basis, for as low as 19.00$ CAD</p>
+              </div>
+              </li>
+
+              </ul>
+
 
             <div class={styles.tabber}>
 
@@ -210,10 +235,15 @@ function Body() {
                     <h1 className={styles.bio_header}>Bio & Skills</h1>
                     <h1  className={styles.bio_tag}>2017<span>Diploma - Network Admin | CCNA, CCNP, & NET+</span></h1>
                     <h1 className={styles.bio_tag}>Skills<span></span></h1>
-                    <h1 className={styles.bio_tag}>HTML<span>HTML (Hypertext Markup Language) is the standard markup language used to create web pages and provide the structure and content of a website, allowing developers to define headings, paragraphs, lists, links, images, and other elements that are displayed in the browser.</span></h1>
-                    <h1 className={styles.bio_tag}>CSS<span>CSS3 (Cascading Style Sheets Level 3) is a stylesheet language used to control the presentation of web content, providing a wide range of visual effects, layout capabilities, and media queries, allowing developers to create responsive designs, animations, and transformations, while improving performance by separating the presentation from the HTML structure.</span></h1>
-                    <h1 className={styles.bio_tag}>NextJs<span>Next.js is a popular React-based framework that provides a simplified development experience for building server-rendered, statically generated, and dynamically serving web applications, allowing developers to focus on writing their application logic and leveraging its built-in performance optimization, automatic code splitting, and optimally configured production builds.</span></h1>
+                    <h1 className={styles.bio_tag}>JAVASCRIPT<span>JavaScript is a versatile scripting language primarily used for adding interactivity and dynamic behavior to websites.</span></h1>
+                    <h1 className={styles.bio_tag}>HTML<span>HTML is the language for structuring web content. </span></h1>
+                    <h1 className={styles.bio_tag}>CSS<span>CSS is used to style and design how that content looks.</span></h1>
+                    <h1 className={styles.bio_tag}>NextJs<span>Next.js is a React-based framework that provides development experience for building server-rendered, statically generated, and dynamically serving web applications.</span></h1>
+                    <h1 className={styles.bio_tag}>SQL<span>SQL (Structured Query Language) is a programming language used for managing and manipulating relational databases.</span></h1>
+                    <h1 className={styles.bio_tag}>PHP<span>PHP is a server-side scripting language commonly used for web development to create dynamic and interactive web applications.</span></h1>
                   </li>
+
+
 
 
                   <ul className={styles.tabber_buttons_list}>
@@ -259,6 +289,35 @@ function Body() {
             </div>
 
 
+            <ul className={styles.essentials_list2}> 
+
+<div className={styles.essentials_list_item_wrapper} >
+  <li className={styles.essentials_list_item} >
+<h1>Figma</h1>
+<p> <Link className={styles.link}
+href={"https://www.figma.com/"}
+>Figma</Link> offers many ready to go templates that are worth a look</p>
+</li>
+</div>
+
+<div className={styles.essentials_list_item_wrapper} >
+<li className={styles.essentials_list_item} >
+<h1>Artist Impressions</h1>
+<p>Check them out, from <Link className={styles.link} href={"https://dribbble.com/tags/ui"}>Dribble's</Link> platform </p>
+</li>
+</div>
+
+<div className={styles.essentials_list_item_wrapper} >
+<li className={styles.essentials_list_item} >
+<h1>SSL</h1>
+<p>With a paid domain, you get automatic ssl protection</p>
+</li>
+</div>
+
+
+</ul>
+
+
 
             <div className={styles.rectangle_images_parent}>
               <ul className={styles.rectangle_images_wrapper}>
@@ -275,102 +334,6 @@ function Body() {
                   <Image className={styles.rectangle_image}
                     src={"bgwhole2.jpg"}
 
-                    width={50}
-                    height={50}
-                  ></Image>
-                </li>
-
-                <li className={styles.rectangle_image_item}>
-                  <Image className={styles.rectangle_image}
-                    src={"bgwhole3.jpg"}
-                    width={50}
-                    height={50}
-                  ></Image>
-                </li>
-
-                <li className={styles.rectangle_image_item}>
-                  <Image className={styles.rectangle_image}
-                    src={"bgwhole4.jpg"}
-                    width={50}
-                    height={50}
-                  ></Image>
-                </li>
-
-                <li className={styles.rectangle_image_item}>
-                  <Image className={styles.rectangle_image}
-                    src={"bgwhole5.jpg"}
-                    width={50}
-                    height={50}
-                  ></Image>
-                </li>
-
-                <li className={styles.rectangle_image_item}>
-                  <Image className={styles.rectangle_image}
-                    src={"bgwhole6.jpg"}
-                    width={50}
-                    height={50}
-                  ></Image>
-                </li>
-
-                <li className={styles.rectangle_image_item}>
-                  <Image className={styles.rectangle_image}
-                    src={"bgwhole7.jpg"}
-                    width={50}
-                    height={50}
-                  ></Image>
-                </li>
-
-                <li className={styles.rectangle_image_item}>
-                  <Image className={styles.rectangle_image}
-                    src={"bgwhole8.jpg"}
-                    width={50}
-                    height={50}
-                  ></Image>
-                </li>
-
-                <li className={styles.rectangle_image_item}>
-                  <Image className={styles.rectangle_image}
-                    src={"bgwhole9.jpg"}
-                    width={50}
-                    height={50}
-                  ></Image>
-                </li>
-
-                <li className={styles.rectangle_image_item}>
-                  <Image className={styles.rectangle_image}
-                    src={"bgwhole10.jpg"}
-                    width={50}
-                    height={50}
-                  ></Image>
-                </li>
-
-                <li className={styles.rectangle_image_item}>
-                  <Image className={styles.rectangle_image}
-                    src={"bgwhole11.jpg"}
-                    width={50}
-                    height={50}
-                  ></Image>
-                </li>
-
-                <li className={styles.rectangle_image_item}>
-                  <Image className={styles.rectangle_image}
-                    src={"bgwhole12.jpg"}
-                    width={50}
-                    height={50}
-                  ></Image>
-                </li>
-
-                <li className={styles.rectangle_image_item}>
-                  <Image className={styles.rectangle_image}
-                    src={"bgwhole1.jpg"}
-                    width={50}
-                    height={50}
-                  ></Image>
-                </li>
-
-                <li className={styles.rectangle_image_item}>
-                  <Image className={styles.rectangle_image}
-                    src={"bgwhole2.jpg"}
                     width={50}
                     height={50}
                   ></Image>
@@ -493,7 +456,7 @@ function Body() {
                           width={50}
                           height={50}
                           alt="logo"
-                          src="/sslsecurity.jpg"
+                          src="/logored.png"
                         >
                         </Image>
                       </Link>
@@ -508,7 +471,7 @@ function Body() {
                           width={50}
                           height={50}
                           alt="logo"
-                          src="/privatedomain.jpg"
+                          src="/logored.png"
                         >
                         </Image>
                       </Link>
@@ -522,26 +485,13 @@ function Body() {
                           width={50}
                           height={50}
                           alt="logo"
-                          src="/sslsecurity.jpg"
+                          src="/logored.png"
                         >
                         </Image>
                       </Link>
-                      <p className={styles.more_tag}> SSL Security</p>
+                      <p className={styles.more_tag}> Original Code</p>
                     </li>
 
-                    <li className={styles.offered_item}>
-                      <Link href={"/services"}>
-                        <Image
-                          className={styles.private_domain_logo}
-                          width={50}
-                          height={50}
-                          alt="logo"
-                          src="/privatedomain.jpg"
-                        >
-                        </Image>
-                      </Link>
-                      <p className={styles.more_tag}>Private Domains</p>
-                    </li>
 
                   </ul>
                 </div>
@@ -575,6 +525,9 @@ function Body() {
             </ul>
           </div>
 
+
+
+          <div className={styles.compare}>
           <div className={styles.span_divider_parent}>
             <div class={styles.span_divider_wrapper}>
               <span class={styles.span_1}></span>
@@ -584,8 +537,6 @@ function Body() {
               <span class={styles.span_5}></span>
             </div>
           </div>
-
-          <div className={styles.compare}>
             <div className={styles.we_offer}>
               <span
               ><span className={styles.we_offer_span}
