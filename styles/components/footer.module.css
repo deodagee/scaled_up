@@ -15,18 +15,27 @@
 /*  font-family: 'Teko', sans-serif;
 */
 
+.footer ul { 
+  list-style: none;
+}
+
 .footer {
   background-color: #0c1215;
   color: #8b0000;
   padding: 10px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .wrapper {
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  justify-content: center;
+width: 100vw;
 }
 
 
@@ -40,6 +49,7 @@
 }
 
 .sections {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -50,11 +60,13 @@
 }
 
 .section {
+  width: max-content;
   flex: 1;
   padding: 15px;
 }
 
 .list_sections {
+  width: max-content;
   font-size: 9px;
   list-style: none;
   display: flex;
@@ -193,31 +205,35 @@
 }
 
 .copyRight {
+  transition: 0.5s;
   text-align: right;
-  font-size: 8px;
-  font-weight: 500;
-  color: rgb(255, 0, 0);
+  font-size: 6px;
+  font-weight: 400;
+  color: rgb(255, 102, 0);
+}
+
+.copyRight:hover {
+    transition: 0.5s;
+transform: scale(1.2);
 }
 
 
-@media (min-width: 200px) and (max-width: 300px) and (orientation: portrait) {
-
+@media (min-width: 200px) and (max-width: 300px) {
 
   .footer {
     background-color: #0c1215;
     color: white;
-    padding: 10px;
-    width: max-content ;
+    width: 100vw ;
+    display: flex;
   }
   
   .wrapper {
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100vw;
   }
-
   
   .sections {
     display: flex;
@@ -256,19 +272,20 @@
 
 }
 
-@media (min-width: 300px) and (max-width: 400px) and (orientation: portrait) {
+@media (min-width: 300px) and (max-width: 400px) {
+
   .footer {
     background-color: #0c1215;
     color: white;
-    padding: 10px;
-    width: max-content ;
+    width: 100vw ;
+    display: flex;
   }
   
   .wrapper {
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100vw;
   }
   
@@ -282,11 +299,8 @@
     height: max-content;
   }
 
-
   .list_sections {
-    align-items: center;
-    justify-content: center;
-    font-size: 9px;
+    font-size: 7px;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -299,6 +313,7 @@
 
   .avatarContact {
     transform: scale(0.6);
+    gap: 10px;
   }
 
   .iconsAndCopy {
@@ -308,6 +323,7 @@
     list-style: none;
     flex-direction: column;
   }
+
 }
 
 
@@ -327,8 +343,6 @@
 
 
   .list_sections {
-    align-items: center;
-    justify-content: center;
     font-size: 9px;
     list-style: none;
     display: flex;

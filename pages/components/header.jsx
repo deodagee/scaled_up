@@ -12,12 +12,14 @@ function Header() {
   return (
     <>
 
-      <div className={styles.parent}>
-        <div className={styles.parent_wrapper}>
+      <div className={`${styles.parent} ${xsmStyles.parent_xsm}`}>
+        <div className={`${styles.parent_wrapper} ${xsmStyles.parent_wrapper_xsm}`}>
 
-          <ul className={`${styles.logo__signature_and_button_parent} ${xsmStyles.logo__signature_and_button_parent_xsm}`}>
+          <ol className={`${styles.logo__signature_and_button_parent} ${xsmStyles.logo__signature_and_button_parent_xsm}`}>
 
-            <li className={styles.logo_item}>
+
+            <ul className={styles.logo_and_signature}>
+            <li className={`${styles.logo_item} ${xsmStyles.logo_item_xsm}`}>
               <Image
                 className={`${styles.header_logo} ${xsmStyles.header_logo_xsm}`} alt="logo"
                 width={50}
@@ -37,30 +39,38 @@ function Header() {
               >
               </Image>
             </li>
+            </ul>
 
 
-            <ul className={`${styles.buttons} ${xsmStyles.buttons_xsm}`}>
-              <li className={styles.register}>
+
+            <ol className={`${styles.buttons} ${xsmStyles.buttons_xsm}`}>
+              <ul className={styles.login_logout_list}>
                 {session ? (
                   <>
-
-                    <button className={`${styles.register_button} ${xsmStyles.register_button_xsm}`} onClick={() => signOut('github')()}>
+                  <li className={styles.register_button_item}>
+                    <button className={`${styles.logout_button_item} ${xsmStyles.register_button_xsm}`} onClick={() => signOut('github')()}>
                       <p>Logout</p>
                     </button>
+                    </li>
                   </>
                 ) : (
                   <>
+                  <li className={styles.logout_button_item}>
                     <button className={`${styles.login_button} ${xsmStyles.login_button_xsm}`} onClick={() => signIn('google')}>
                       <p>GitHub signIn</p>
                     </button>
+                    </li>
+                    <li className={styles.logout_button_item}>
                     <button className={`${styles.login_button} ${xsmStyles.login_button_xsm}`} onClick={() => signIn('github')}>
                       <p>Google signIn</p>
                     </button>
+                    </li>
                   </>
                 )}
-              </li>
-            </ul>
-          </ul>
+              </ul>
+            </ol>
+
+          </ol>
 
 
 

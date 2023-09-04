@@ -9,9 +9,11 @@ function Footer() {
     <div className={styles.footer}>
       <div className={styles.wrapper}>
 
-      <div className={styles.separatorLine1}></div>
+      <ul className={styles.separatorLine1}></ul>
 
-        <ul className={styles.sections}>
+        <ol className={styles.sections}>
+
+          <ul>
           <li className={styles.section}>
             <div className={styles.avatarContact}>
               <Image
@@ -27,6 +29,7 @@ function Footer() {
               </button>
             </div>
           </li>
+          </ul>
 
           <ul className={styles.list_sections}>
           <li className={styles.section}>
@@ -63,11 +66,11 @@ function Footer() {
             </div>
           </li>
         </ul>
-        </ul>
+        </ol>
 
-        <div className={styles.separatorLine1}></div>
+        <ul className={styles.separatorLine1}></ul>
 
-        <ul className={styles.iconsAndCopy}>
+        <ol className={styles.iconsAndCopy}>
           <li className={styles.iconWrapper}>
             <Image
               alt="Upwork"
@@ -101,7 +104,7 @@ function Footer() {
           <li className={styles.copyRight}>
             <p>© Astrumstellar | Stellarspace | Deo Singiza</p>
           </li>
-        </ul>
+        </ol>
       </div>
     </div>
   );

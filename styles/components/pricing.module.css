@@ -21,21 +21,82 @@
 }
 
 .pricing_page {
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: rgba(241, 241, 241, 0.727);
-
 }
 
 .pricing_page_wrapper {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.pricing_headers_list_wrapper {
+.offered_list { 
+  gap: 10px;
+  margin-top: 200px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.offered_item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0px;
+  gap: 0px;
+}
+
+.logo_ssl_logo {
+  margin-top: 5px;
+  box-shadow: rgb(6, 6, 6) 0px 0px 7px;
+  border-radius: 50px;
+  transition: 0.5s;
+  transform: scale(0.5);
+}
+
+.logo_ssl_logo:hover{
+  box-shadow: white 0px 0px 15px;
+  transition: 0.5s;
+  transform: scale(0.5);
+}
+
+.more_tag {
+  background-color: rgb(15, 26, 27);
+  padding: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 45px;
+  color: rgb(227, 227, 227);
+  font-size: 7px;
+  white-space: nowrap;
+  font-weight: 600;
+  font-family: 'Cabin', sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: white 0px 0px 6px;
+}
+
+.more_tag:hover {
+  transition: 0.4s;
+  transform: scale(1.03);
+  box-shadow: white 0px 0px 8px;
+}
+
+.pricing_headers_top {
   display: flex;
   margin-top: 20vh;
   flex-direction: column;
@@ -54,6 +115,7 @@ gap: 80px;
 
 .disclaimer_div { 
   display: flex;
+  width: 100vw;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -100,20 +162,29 @@ gap: 80px;
 } 
 
 
+
+.pricing_headers_list_wrapper {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .pricing_headers_list {
-  background-color: rgba(204, 204, 204, 0.107);
+  background-color: rgb(20, 32, 39);
   box-shadow: rgb(255, 255, 255) 0px 0px 7px;
   border-radius: 0.90rem;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  gap: 0;
+  gap: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   transition: 0.5s;
-  width: max-content;
+  width: 90vw;
+  margin-top: 20px;
 }
 
 .pricing_headers_list:hover {
@@ -121,28 +192,59 @@ gap: 80px;
   box-shadow: rgb(255, 255, 255) 0px 0px 10px;
 }
 
+.seperator_line {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  height: 20px;
+  width: 1px;
+}
 .pricing_headers_list p {
   white-space: nowrap;
   font-family: 'Oswald', sans-serif;
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 500;
-  color: rgb(72, 72, 72);
+  color: rgb(255, 255, 255);
   padding: 5px;
   border-radius: 0.15rem;
   transition: 0.5s;
 }
 
 .pricing_headers_list p:hover {
-  color: rgb(19, 19, 19);
+  color: rgb(182, 182, 182);
   transition: 0.3s;
   text-decoration: underline;
-  transform: scale(1.05);
 }
 
 .pricing_headers_list li:hover {
   color: rgb(255, 191, 0);
   transition: 0.3s;
   text-decoration: underline;
+}
+
+.pricing {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pricing_wrapper {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.compare {
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .span_divider_parent {
@@ -156,7 +258,7 @@ gap: 80px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50vw;
   padding: 0.5rem;
   gap: 2px;
 }
@@ -195,32 +297,10 @@ gap: 80px;
   box-shadow: rgba(255, 255, 255, 0.458) 0px 0px 6px;
 }
 
-.seperator_line {
-  background-color: rgb(63, 63, 63);
-  height: 20px;
-  width: 1.5px;
-}
 
 
-.pricing {
-  padding: 20px;
-  margin-bottom: 5vh;
 
-}
 
-.pricing_wrapper {
-  position: relative;
-
-}
-
-.compare,
-.we_offer {
-  text-align: center;
-  margin-top: 3vh;
-  margin-bottom: 15px;
-  font-weight: 500;
-  font-family: 'Cabin', sans-serif;
-}
 
 .we_offer_span {
   color: rgb(55, 55, 55);
@@ -240,22 +320,24 @@ gap: 80px;
 }
 
 .promo_regular_wrapper {
+  border-color: rgba(2, 73, 0, 0.491);
   list-style: none;
   border-width: 1.5px;
-  border-color: rgba(2, 73, 0, 0.491);
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   padding-left: 10px;
   padding-right: 10px;
   background-color: white;
-  box-shadow: rgba(16, 17, 23, 0.491) 3px 5px 8px;
+  box-shadow: rgba(2, 56, 0, 0.491) 3px 5px 10px;
   border-radius: 50px;
   transition: 0.6s;
   margin-bottom: 5vh;
 }
 
 .promo_regular_wrapper:hover {
-  box-shadow: rgb(143, 143, 143)3px 2px 10px;
+  box-shadow: rgb(220, 220, 220)3px 10px 5px;
   transition: 0.6s;
   transform: scale(1.01);
 }
@@ -322,6 +404,24 @@ gap: 80px;
   color: rgba(0, 0, 0, 0.541);
 }
 
+.pricing_tab_groups_wrapper {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pricing_tab_group_1,
+.pricing_tab_group_2 {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
 .frame_405 {
   width: max-content;
   display: grid;
@@ -330,22 +430,19 @@ gap: 80px;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.pricing_tab_groups_wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+
 
 .frame_wrapper {
-  background-color: rgba(7, 4, 17, 0.934);
+  background: linear-gradient(to right,
+      rgb(5, 15, 32),
+      rgba(5, 15, 32, 0.893),
+      rgb(5, 15, 32));
   border-width: 1px;
   box-shadow: rgb(60, 60, 60) 0px 0px 10px 1px;
   border-color: rgb(255, 196, 0);
-  background-image: url("/layer1.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: cover;
   padding: 30px;
   border-width: 2px;
   border-bottom-right-radius: 0.85rem;
@@ -359,7 +456,7 @@ gap: 80px;
   justify-content: center;
   flex-direction: row;
   gap: 0;
-  width: 450px;
+  width: 400px;
   height: 400px;
   color: rgb(212, 212, 212);
   font-size: 12px;
@@ -379,7 +476,7 @@ gap: 80px;
   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   flex-direction: column;
   gap: 20px;
 
@@ -391,7 +488,6 @@ gap: 80px;
   padding: 2px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 10px;
   margin-bottom: 20px;
   border-radius: 0.45rem;
   border-width: 1px;
@@ -407,31 +503,54 @@ gap: 80px;
 
 
 
-.your_session_has_tim3 {
+.your_session_has_tim3_regular {
   font-family: 'Teko', sans-serif;
   white-space: nowrap;
   justify-content: center;
   align-items: center;
   display: flex;
   border-radius: 50px;
-  width: max-content;
+  width: 17vw;
   border-width: 1px;
   border-color: linear-gradient(to right, rgba(255, 255, 255, 0.731), rgba(255, 255, 255, 0.935), rgba(255, 255, 255, 0.752));
   font-size: 20px;
   font-weight: 400;
+  padding: 1px;
   color: rgb(70, 70, 70);
   box-shadow: white 0px 0px 8px;
   transition: 0.6s;
   background-color: rgba(255, 255, 255, 0.981);
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.801), rgba(255, 255, 255, 0.935), rgba(255, 255, 255, 0.845));
+  background: linear-gradient(to right, rgba(95, 95, 95, 0.801), rgba(255, 255, 255, 0.935), rgba(255, 255, 255, 0.845));
   padding-top: 5px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
-.your_session_has_tim3:hover {
+.your_session_has_tim3_promo {
+  font-family: 'Teko', sans-serif;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50px;
+  width: 17vw;
+  border-width: 1px;
+  border-color: linear-gradient(to right, rgba(255, 255, 255, 0.731), rgba(255, 255, 255, 0.935), rgba(255, 255, 255, 0.752));
+  font-size: 20px;
+  font-weight: 400;
+  padding: 1px;
+  color: rgb(70, 70, 70);
+  box-shadow: white 0px 0px 8px;
   transition: 0.6s;
-  transform: scale(1.01);
+  background-color: rgba(255, 255, 255, 0.981);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.845), rgba(255, 255, 255, 0.935), rgba(95, 95, 95, 0.801));
+  padding-top: 5px;
+}
+
+
+
+.your_session_has_tim3_regular:hover,
+.your_session_has_tim3_promo:hover {
+  transition: 0.6s;
+  transform: scale(1.03);
   color: rgb(30, 30, 30);
   box-shadow: white 0px 0px 10px;
 }
@@ -467,7 +586,6 @@ gap: 80px;
   background-color: rgb(255, 255, 255);
   color: rgb(36, 36, 36);
 }
-
 
 .list_title {
   font-size: 11px;
@@ -557,115 +675,179 @@ gap: 80px;
 }
 
 
-.offered_list {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding: 0;
-  gap:10px;
-}
-
-.offered_item {
-  gap: 0.5vw;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10vh;
-  margin-top: 10vh;
-  transform: scale(0.5);
-}
-
-.logo_ssl_logo,
-.private_domain_logo {
-  box-shadow: white 0px 0px 7px;
-  border-radius: 50px;
-  width: 50px;
-  height: 50px;
-  transition: 0.5s;
-}
-
-.logo_ssl_logo:hover,
-.private_domain_logo:hover {
-  box-shadow: white 0px 0px 15px;
-  transition: 0.5s;
-transform: scale(1.05);
-} 
-
-.bottom_disclaimer_div { 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.bottom_disclaimer_title {
-  font-size: 40px;
-  font-weight: 800;
-  font-family: 'Teko', sans-serif;
-  color: rgb(37, 99, 98);
-  transition: 0.3s;
-}
-
-.bottom_disclaimer_title:hover {
-  transition: 0.3s;
-  transform: scale(1.03);
-  color: rgb(33, 81, 81);
-}
-
-.bottom_disclaimer { 
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  text-align: center;
-}
-
-.bottom_disclaimer_paragraph { 
-  width: 250px;
-  font-size: 10px;
-  color: rgb(55, 84, 119);
-  font-weight: 800;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  transition: 0.4s;
-}
-
-.bottom_disclaimer_paragraph:hover {
-  transition: 0.4s;
-  transform: scale(1.1); 
-  color: rgb(16, 17, 27);
-} 
 
 
-@media (min-width: 200px) and (max-width: 300px) and (orientation: portrait) {
+@media (min-width: 200px) and (max-width: 300px) {
 
-  .promo_regular_parent {
-    transform: scale(0.8);
-    margin-bottom: 10px;
+  .offered_list { 
+    gap: 10px;
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
   }
+  
+
+  .logo_ssl_logo{
+    margin-top: 5px;
+    box-shadow: white 0px 0px 7px;
+    border-radius: 50px;
+    transition: 0.5s;
+  }
+  
+  .compare {
+    margin-top: 50px;
+    transform: scale(0.7);
+  }
+
+  .more_tag {
+    margin-top: -5px;
+  }
+
+  .pricing_tab_groups_wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
 
   .frame_wrapper {
     padding: 20px;
-    width: 270px;
+    width: 85vw;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   .frame_405 {
     width: max-content;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
 
 
+  .label {
+    width: 100px;
+  }
+
   .frame_402 {
-    width: 40vw;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .your_session_has_tim3_regular,
+  .your_session_has_tim3_promo {
+    width: 190px;
+  }
+
+  .sites_list {
+    position: relative;
+  }
+
+  .list_component {
+
+    display: flex;
+  }
+
+  .sites_list li {
+    padding: 0;
+
+  }
+
+  .list_title {
+    font-size: 9px;
+    color: orange;
+  }
+
+  .list_description {
+    font-size: 8px;
+    white-space: nowrap;
+  }
+
+
+}
+
+
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .offered_list { 
+    gap: 10px;
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .compare {
+    margin-top: 50px;
+    transform: scale(0.7);
+  }
+
+  .more_tag {
+    margin-top: -5px;
+  }
+
+  .pricing_tab_groups_wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .frame_wrapper {
+    padding: 20px;
+    width: 85vw;
+    height: 500px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-left: 20px;
   }
 
-  .your_session_has_tim3 {
-    width: 45vw;
+  .frame_405 {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+
+
+  .label {
+    width: 100px;
+  }
+
+  .frame_402 {
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .your_session_has_tim3_regular,
+  .your_session_has_tim3_promo {
+    width: 250px;
   }
 
   .sites_list {
@@ -695,49 +877,87 @@ transform: scale(1.05);
 }
 
 
-@media (min-width: 300px) and (max-width: 600px) and (orientation: portrait) {
 
-  .promo_regular_parent {
-    transform: scale(0.8);
-    margin-bottom: 10px;
+@media (min-width: 400px) and (max-width: 500px) {
+  .offered_list { 
+    gap: 10px;
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
   }
+
+
+  .compare {
+    margin-top: 50px;
+    transform: scale(0.7);
+  }
+
+  .more_tag {
+    margin-top: -5px;
+  }
+
+  .pricing_tab_groups_wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
 
   .frame_wrapper {
     padding: 20px;
-    width: 300px;
+    width: 85vw;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   .frame_405 {
     width: max-content;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+  }
+
+
+  .label {
+    width: 100px;
   }
 
   .frame_402 {
-    width: 55vw;
+    width: max-content;
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     flex-direction: column;
-    gap: 20px;
-    padding-left: 20px;
+    gap: 0px;
   }
 
-  .your_session_has_tim3 {
-    width: 100px;
+  .your_session_has_tim3_regular,
+  .your_session_has_tim3_promo {
+    width: 250px;
   }
 
   .sites_list {
     position: relative;
   }
 
-  .sites_list li {
-    padding: 0;
+  .list_component {
+
+    display: flex;
   }
 
-  .list_component {
-    display: flex;
+  .sites_list li {
+    padding: 0;
+
   }
 
   .list_title {
@@ -754,48 +974,279 @@ transform: scale(1.05);
 
 
 
-@media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
-  .promo_regular_parent {
-    transform: scale(0.8);
-    margin-bottom: 10px;
+
+@media (min-width: 500px) and (max-width: 600px) {
+
+  .offered_list { 
+    gap: 10px;
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
   }
+
+  .compare {
+    margin-top: 50px;
+    transform: scale(0.7);
+  }
+
+  .more_tag {
+    margin-top: -5px;
+  }
+
+  .pricing_tab_groups_wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
 
   .frame_wrapper {
     padding: 20px;
-    width: 500px;
+    width: 85vw;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   .frame_405 {
     width: max-content;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+  }
+
+
+  .label {
+    width: 100px;
   }
 
   .frame_402 {
-    width: 55vw;
+    width: max-content;
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     flex-direction: column;
-    gap: 20px;
-    padding-left: 0;
+    gap: 0px;
   }
 
-  .your_session_has_tim3 {
-    width: 100px;
+  .your_session_has_tim3_regular,
+  .your_session_has_tim3_promo {
+    width: 250px;
   }
 
   .sites_list {
     position: relative;
   }
 
+  .list_component {
+
+    display: flex;
+  }
+
   .sites_list li {
     padding: 0;
+
+  }
+
+  .list_title {
+    font-size: 9px;
+    color: orange;
+  }
+
+  .list_description {
+    font-size: 8px;
+    white-space: nowrap;
+  }
+
+}
+
+
+
+
+@media (min-width: 600px) and (max-width: 700px) {
+
+  .offered_list { 
+    gap: 10px;
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .compare {
+    margin-top: 50px;
+    transform: scale(0.7);
+  }
+
+  .more_tag {
+    margin-top: -5px;
+  }
+
+  .pricing_tab_groups_wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .frame_wrapper {
+    padding: 20px;
+    width: 85vw;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .frame_405 {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .label {
+    width: 100px;
+  }
+
+  .frame_402 {
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .your_session_has_tim3_regular,
+  .your_session_has_tim3_promo {
+    width: 250px;
+  }
+
+  .sites_list {
+    position: relative;
   }
 
   .list_component {
+
     display: flex;
+  }
+
+  .sites_list li {
+    padding: 0;
+
+  }
+
+  .list_title {
+    font-size: 9px;
+    color: orange;
+  }
+
+  .list_description {
+    font-size: 8px;
+    white-space: nowrap;
+  }
+
+}
+
+
+@media (min-width: 700px) and (max-width: 800px) {
+
+  .offered_list { 
+    gap: 10px;
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .compare {
+    margin-top: 50px;
+    transform: scale(0.7);
+  }
+
+  .more_tag {
+    margin-top: -5px;
+  }
+
+  .pricing_tab_groups_wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .frame_wrapper {
+    padding: 20px;
+    width: 85vw;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .frame_405 {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .label {
+    width: 100px;
+  }
+
+  .frame_402 {
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .your_session_has_tim3_regular,
+  .your_session_has_tim3_promo {
+    width: 250px;
+  }
+
+  .sites_list {
+    position: relative;
+  }
+
+  .list_component {
+
+    display: flex;
+  }
+
+  .sites_list li {
+    padding: 0;
+
   }
 
   .list_title {
@@ -814,48 +1265,85 @@ transform: scale(1.05);
 
 
 @media (min-width: 800px) and (max-width: 900px) {
-  .promo_regular_parent {
-    transform: scale(0.8);
-    margin-bottom: 10px;
+
+  .offered_list { 
+    gap: 10px;
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .compare {
+    margin-top: 50px;
+    transform: scale(0.7);
+  }
+
+  .more_tag {
+    margin-top: -5px;
+  }
+
+  .pricing_tab_groups_wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
 
   .frame_wrapper {
     padding: 20px;
-    width: 700px;
+    width: 85vw;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   .frame_405 {
     width: max-content;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+  }
+
+
+  .label {
+    width: 100px;
   }
 
   .frame_402 {
-    width: 55vw;
+    width: max-content;
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     flex-direction: column;
-    gap: 20px;
-    padding-left: 20px;
+    gap: 0px;
   }
 
-  .your_session_has_tim3 {
-    width: 100px;
+  .your_session_has_tim3_regular,
+  .your_session_has_tim3_promo {
+    width: 250px;
   }
 
   .sites_list {
     position: relative;
   }
 
-  .sites_list li {
-    padding: 0;
+  .list_component {
+
+    display: flex;
   }
 
-  .list_component {
-    display: flex;
+  .sites_list li {
+    padding: 0;
+
   }
 
   .list_title {
@@ -869,131 +1357,89 @@ transform: scale(1.05);
   }
 
 }
-
 
 
 
 @media (min-width: 900px) and (max-width: 1000px) {
 
-  .promo_regular_parent {
-    transform: scale(0.8);
-    margin-bottom: 10px;
-  }
-
-  .frame_wrapper {
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 400px;
-  }
-
-  .frame_405 {
-    width: max-content;
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .frame_402 {
-    width: max-content;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-left: 0px;
-  }
-
-  .pricing_headers_list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .your_session_has_tim3 {
-    width: 200px;
-  }
-
-  .sites_list {
-    position: relative;
-  }
-
-  .sites_list li {
-    padding: 0;
-  }
-
-  .list_component {
-    display: flex;
-  }
-
-  .list_title {
-    font-size: 9px;
-    color: orange;
-  }
-
-  .list_description {
-    font-size: 8px;
-    white-space: nowrap;
-  }
-
-}
-
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-
-
-  .promo_regular_parent {
-    transform: scale(0.9);
-    margin-bottom: 10px;
-  }
-
-
-  .frame_wrapper {
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 310px;
-  }
-
-
-  .frame_405 {
-    display: grid;
+  .offered_list { 
     gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .compare {
+    margin-top: 50px;
+    transform: scale(0.7);
+  }
+
+  .more_tag {
+    margin-top: -5px;
+  }
+
+  .pricing_tab_groups_wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .frame_wrapper {
+    padding: 20px;
+    width: 85vw;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .frame_405 {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .label {
+    width: 100px;
   }
 
   .frame_402 {
     width: max-content;
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     flex-direction: column;
-    gap: 20px;
-    padding-left: 0px;
+    gap: 0px;
   }
 
-  .pricing_headers_list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .your_session_has_tim3 {
-    width: 200px;
+  .your_session_has_tim3_regular,
+  .your_session_has_tim3_promo {
+    width: 250px;
   }
 
   .sites_list {
     position: relative;
   }
 
-  .sites_list li {
-    padding: 0;
+  .list_component {
+
+    display: flex;
   }
 
-  .list_component {
-    display: flex;
+  .sites_list li {
+    padding: 0;
+
   }
 
   .list_title {
@@ -1007,63 +1453,291 @@ transform: scale(1.05);
   }
 
 }
+
+
+
+
+
+
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+
+  .offered_list { 
+    gap: 10px;
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .compare {
+    margin-top: 50px;
+    transform: scale(0.7);
+  }
+
+  .more_tag {
+    margin-top: -5px;
+  }
+
+  .pricing_tab_groups_wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .frame_wrapper {
+    padding: 20px;
+    width: 85vw;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .frame_405 {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .label {
+    width: 100px;
+  }
+
+  .frame_402 {
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .your_session_has_tim3_regular,
+  .your_session_has_tim3_promo {
+    width: 250px;
+  }
+
+  .sites_list {
+    position: relative;
+  }
+
+  .list_component {
+
+    display: flex;
+  }
+
+  .sites_list li {
+    padding: 0;
+
+  }
+
+  .list_title {
+    font-size: 9px;
+    color: orange;
+  }
+
+  .list_description {
+    font-size: 8px;
+    white-space: nowrap;
+  }
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+
+  .offered_list { 
+    gap: 10px;
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .compare {
+    margin-top: 50px;
+    transform: scale(0.7);
+  }
+
+  .more_tag {
+    margin-top: -5px;
+  }
+
+  .pricing_tab_groups_wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .frame_wrapper {
+    padding: 20px;
+    width: 85vw;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .frame_405 {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .label {
+    width: 100px;
+  }
+
+  .frame_402 {
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .your_session_has_tim3_regular,
+  .your_session_has_tim3_promo {
+    width: 250px;
+  }
+
+  .sites_list {
+    position: relative;
+  }
+
+  .list_component {
+
+    display: flex;
+  }
+
+  .sites_list li {
+    padding: 0;
+
+  }
+
+  .list_title {
+    font-size: 9px;
+    color: orange;
+  }
+
+  .list_description {
+    font-size: 8px;
+    white-space: nowrap;
+  }
+
+}
+
+
+
 
 
 
 
 @media (min-width: 1200px) and (max-width: 1300px) {
 
+  .offered_list { 
+    gap: 10px;
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .compare {
+    margin-top: 50px;
+    transform: scale(0.7);
+  }
 
-  .promo_regular_parent {
-    transform: scale(0.9);
-    margin-bottom: 10px;
+  .more_tag {
+    margin-top: -5px;
+  }
+
+  .pricing_tab_groups_wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
 
   .frame_wrapper {
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 380px;
+    padding: 20px;
+    width: 85vw;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   .frame_405 {
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(3, 1fr);
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .label {
+    width: 100px;
   }
 
   .frame_402 {
     width: max-content;
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     flex-direction: column;
-    gap: 20px;
-    padding-left: 0px;
+    gap: 0px;
   }
 
-  .pricing_headers_list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .your_session_has_tim3 {
-    width: 200px;
+  .your_session_has_tim3_regular,
+  .your_session_has_tim3_promo {
+    width: 250px;
   }
 
   .sites_list {
     position: relative;
   }
 
-  .sites_list li {
-    padding: 0;
+  .list_component {
+
+    display: flex;
   }
 
-  .list_component {
-    display: flex;
+  .sites_list li {
+    padding: 0;
+
   }
 
   .list_title {
@@ -1077,7 +1751,6 @@ transform: scale(1.05);
   }
 
 }
-
 
 
 
@@ -1085,58 +1758,84 @@ transform: scale(1.05);
 
 @media (min-width: 1300px) and (max-width: 1400px) {
 
-
-  .promo_regular_parent {
-    transform: scale(0.9);
-    margin-bottom: 10px;
+  .offered_list { 
+    gap: 10px;
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
   }
 
+  .compare {
+    margin-top: 50px;
+    transform: scale(0.7);
+  }
+
+  .more_tag {
+    margin-top: -5px;
+  }
+
+  .pricing_tab_groups_wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
 
   .frame_wrapper {
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 350px;
+    padding: 20px;
+    width: 85vw;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   .frame_405 {
-    display: grid;
-    gap: 57px;
-    grid-template-columns: repeat(3, 1fr);
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .label {
+    width: 100px;
   }
 
   .frame_402 {
     width: max-content;
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     flex-direction: column;
-    gap: 20px;
-    padding-left: 0px;
+    gap: 0px;
   }
 
-  .pricing_headers_list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .your_session_has_tim3 {
-    width: 200px;
+  .your_session_has_tim3_regular,
+  .your_session_has_tim3_promo {
+    width: 250px;
   }
 
   .sites_list {
     position: relative;
   }
 
-  .sites_list li {
-    padding: 0;
+  .list_component {
+
+    display: flex;
   }
 
-  .list_component {
-    display: flex;
+  .sites_list li {
+    padding: 0;
+
   }
 
   .list_title {
@@ -1150,3 +1849,5 @@ transform: scale(1.05);
   }
 
 }
+
+
